@@ -38,7 +38,11 @@ module.exports = {
 						})
 							.then((returnedUser) => {
 								res.status(200).send({
-									data: returnedUser,
+									data: {
+										id: returnedUser.id,
+										email: returnedUser.email,
+										Notes: returnedUser.Notes
+									},
 									message: 'User created successfully.',
 									status: true
 								})
