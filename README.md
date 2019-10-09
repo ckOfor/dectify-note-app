@@ -59,7 +59,7 @@ DATABASE_URL=postgres://hqerlckr:kuN7z9cmJs4fs6AfmKOfs95eaP8APpqB@salt.db.elepha
 
 2. type the following code on your command line
 ```
-DATABASE_URL=postgres://hqerlckr:kuN7z9cmJs4fs6AfmKOfs95eaP8APpqB@salt.db.elephantsql.com:5432/hqerlckr
+export DATABASE_URL=postgres://hqerlckr:kuN7z9cmJs4fs6AfmKOfs95eaP8APpqB@salt.db.elephantsql.com:5432/hqerlckr
 ```
 
 3. Run sequelize migrate command below:
