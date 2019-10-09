@@ -11,6 +11,8 @@ Features
 * Users can get a notes.
 * Users can get all notes.
 * Users can edit a notes.
+* Users can add note category.
+* Users can get notes by category.
 * Users can delete a notes.
 
 Authorization: No authorization required
@@ -80,4 +82,4 @@ Open a pull request.
 Licence
 ISC
 
-Copyright (c) 2018 Chinedu Ofor
+Copyright (c) 2019 Chinedu Ofor
