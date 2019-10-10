@@ -27,11 +27,7 @@ module.exports = {
 		return Note
 		.findAll({ where: { userId: req.params.userId }})
 		.then(note => {
-			res.status(200).send({
-				data: note,
-				message: 'Notes retrieved successfully.',
-				status: true
-			})
+			res.status(200).send(note)
 		})
 		.catch((error) => {
 			res.status(400).send({
