@@ -25,7 +25,7 @@ module.exports = {
 	},
 	list(req, res) {
 		return Note
-		.findAll({ where: { userId: req.body.userId }})
+		.findAll({ where: { userId: req.params.userId }})
 		.then(note => {
 			res.status(200).send({
 				data: note,
