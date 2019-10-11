@@ -22,7 +22,7 @@ This is the link in which to access the api.
 
 Below are the collection of routes.
 ```
- aapp.get('/api', (req, res) => res.status(200).send({
+ app.get('/api', (req, res) => res.status(200).send({
 		message: 'Welcome to the Detectify API!',
 	}));
 	

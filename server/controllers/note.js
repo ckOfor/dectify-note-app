@@ -64,7 +64,10 @@ module.exports = {
 	},
 	update(req, res) {
 		return Note
-		.findOne({ where: { id: req.params.noteId }})
+		.findOne({ where: {
+			id: req.params.noteId,
+			userId: req.params.userId,
+		}})
 		.then(note => {
 			if (!note) {
 				return res.status(404).send({
@@ -101,7 +104,9 @@ module.exports = {
 	},
 	destroy(req, res) {
 		return Note
-		.findOne({ where: { id: req.params.noteId }})
+		.findOne({ where: {
+			id: req.params.noteId
+		}})
 		.then(note => {
 			if (!note) {
 				return res.status(400).send({
@@ -111,7 +116,7 @@ module.exports = {
 			return note
 			.destroy()
 			.then(() => {
-				res.status(201).send({
+				res.status(200).send({
 					data: {},
 					message: 'Note deleted successfully.',
 					status: true
