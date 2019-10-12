@@ -5,7 +5,7 @@ dectify-note-app is an API that allows you perform CRUD operations on notes
 
 Note: For learning purposes, you can follow the commit history of this repo.
 
-To use the routes, visit PMS API
+To use the routes, visit Notes API
 Features
 * Users can create a notes.
 * Users can get a notes.
